@@ -13,5 +13,14 @@ $$
 
 where $\chi = 0.1$, $\omega$ is the vorticity, $\mathbf{u}$ is the velocity field, $\nu=1\text{e}-6$ is the kinematic viscosity, and $\Delta$ is the two-dimensional Laplacian operator. Initial condition $\omega_0(x) \sim \mathcal{N}\left(0, 14^{1/2}\left(-\Delta + 196 I\right)^{-3/2}\right)$
 
+### Generating Data
 
-Exisiting datasets from [ixScience's Google Drive](https://drive.google.com/drive/folders/1UnbQh2WWc6knEHbLn-ZaXrKUZhp7pjt-) and corresponding repo [ixScience/fourier_neural_operator](https://github.com/ixScience/fourier_neural_operator).
+The [`data/`](data/) directory contains MLX accelerated code to generate the Kolmogorov flows from Gaussian Random Fields (see [`data/randf.py`](data/randf.py)). Simulating and configuring the dataset is done with [`data/ns2d.py`](data/ns2d.py).
+
+Use the [`plotting.py`](plotting.py) code to visualize samples, such as that below.
+
+![ns](media/navier_stokes.png)
+
+#### Notice
+
+It is still costly on an Apple M3 Max generate many samples. Thus, existing datasets are still useful for experimentation and comparisons. [ixScience/fourier_neural_operator](https://github.com/ixScience/fourier_neural_operator) provides a good reference to Kolmogorov flows and more that can be downloaded on their [Google Drive](https://drive.google.com/drive/folders/1UnbQh2WWc6knEHbLn-ZaXrKUZhp7pjt-).
