@@ -19,7 +19,9 @@ The [`data/`](data/) directory contains MLX accelerated code to generate the Kol
 
 Use the [`plotting.py`](plotting.py) code to visualize samples, such as that below.
 
-![ns](media/navier_stokes.png)
+<p align="center">
+  <img src="media/navier_stokes.png" alt="ns" width="75%">
+</p>
 
 #### Notice
 
