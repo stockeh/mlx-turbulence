@@ -26,3 +26,7 @@ Use the [`plotting.py`](plotting.py) code to visualize samples, such as that bel
 #### Notice
 
 It is still costly on an Apple M3 Max generate many samples. Thus, existing datasets are still useful for experimentation and comparisons. [ixScience/fourier_neural_operator](https://github.com/ixScience/fourier_neural_operator) provides a good reference to Kolmogorov flows and more that can be downloaded on their [Google Drive](https://drive.google.com/drive/folders/1UnbQh2WWc6knEHbLn-ZaXrKUZhp7pjt-).
+
+### Training
+
+See [`training.py`](training.py) and [`generate.py`](generate.py).
